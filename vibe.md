@@ -1,6 +1,6 @@
 ---
 name: vibe
-description: Convert Vibe pseudocode in .vibe files, startvibe/endvibe source blocks, and source comments containing *vibe* into working code. Use when the user invokes /vibe, asks to implement or resolve Vibe code, supplies a .vibe file, or references actual Vibe markers. Do not activate for incidental prose or documentation that merely discusses Vibe.
+description: Convert Vibe pseudocode in .vibe files, startvibe/endvibe source blocks, and source comments containing "vibe:" into working code. Use when the user invokes /vibe, asks to implement or resolve Vibe code, supplies a .vibe file, or references actual Vibe markers. Do not activate for incidental prose or documentation that merely discusses the word 'vibe'.
 ---
 
 Vibe is a pseudocode framework for expressing implementation intent inside a codebase. Its contents may be valid target-language code, malformed approximations, prose, omissions, or any mixture of them. Treat Vibe syntax as evidence of intent, not as a literal implementation contract.
