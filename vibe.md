@@ -77,13 +77,13 @@ Do not begin a target implementation unless you are sufficiently clear on the us
 
 ### 4. Validate before removing vibe artifacts
 
-Use the smallest existing syntax, formatting, type-check, build, or test commands that cover each changed component. Do not install or invent tooling merely to clear a Vibe artifact.
+Use the smallest existing syntax, formatting, type-check, build, or test commands that cover each changed component. 
 
 If applicable validation fails, fix the implementation and rerun it. If failure exposes unresolved intent or correctness cannot be established, preserve the Vibe artifact and clarify the ambiguity with the user before proceeding.
 
-When no applicable automated validation exists, strong contextual and structural confidence may suffice. Inspect the result for syntactic and structural coherence and disclose the lack of automated validation.
+When no applicable automated validation exists, strong contextual and structural confidence may suffice. 
 
-Only after all outputs represented by an artifact are complete and sufficiently supported:
+Only after all outputs represented by an artifact are complete and sufficiently validated:
 
 - remove the `startvibe` and `endvibe` marker lines from a successfully implemented inline block; or
 - remove the entire successfully implemented single-line Vibe comment while preserving any code on the same line; or
@@ -91,17 +91,11 @@ Only after all outputs represented by an artifact are complete and sufficiently 
 
 Never delete unresolved intent.
 
-### 5. Enforce the completion gate
-
-Repeat discovery in the declared scope after cleanup.
-
-The run is fully successful only when no in-scope `.vibe` files, valid inline blocks, single-line Vibe comments, or malformed Vibe markers remain. Otherwise, describe the result as partial and list every residual artifact with its blocker. When the user narrowed the scope, do not claim that the whole repository is Vibe-free.
-
 ## Final response
 
 Report concisely:
 
 - the components implemented;
 - the `.vibe` files deleted, inline blocks removed, and single-line Vibe comments removed;
-- the validation performed, or that no applicable automation existed; and
+- the validation performed
 - any residual artifacts and why they remain.
