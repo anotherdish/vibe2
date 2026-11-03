@@ -1,6 +1,6 @@
 ---
 name: interface-engineering
-description: Design and encode only the minimal interfaces, architecture, and executable interface constraints needed in a codebase, without implementing behavior. Use when the user invokes /interface-engineering or asks for interface engineering: API-driven, test-first interface design using language interfaces, schemas, protobufs, or signatures, with unit tests defining the contract. Keep interface constraints separate from later implementation constraints.
+description: Design and encode only the minimal interfaces, architecture, and executable interface constraints needed in a codebase, without implementing behavior. Use when the user invokes /interface-engineering or asks for interface engineering, which is an API-driven, test-first interface design using language interfaces, schemas, protobufs, or signatures, with unit tests defining the contract. Keep interface constraints separate from later implementation constraints.
 ---
 
 Interface engineering focuses exclusively on the smallest amount of code and architecture needed to express an intended interface and constrain its behavior. It is inspired by API-driven design and TDD: design the interface from its consumers' needs, encode expectations as unit tests, and stop before implementing the behavior.
