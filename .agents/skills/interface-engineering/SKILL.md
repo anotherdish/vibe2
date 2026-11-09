@@ -33,3 +33,4 @@ Establish a clear, consistent codebase pattern that makes interface declarations
 ## Only write interfaces for code to be written
 
 When doing interface engineering, you only need to design interfaces for code you will be implementing. If you are relying on an external system or technology, you should NOT write interfaces and contracts for that component, as it is assumed to already have a defined interface and explicit or otherwise documented contracts. 
+If the actions that need to be done are imperative steps, then you do not need to write interfaces for those actions
